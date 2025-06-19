@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F4137">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <!-- Judul Login -->
+        <TextView
+            android:id="@+id/loginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp" />
+
+        <!-- Username -->
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_below="@id/loginTitle"
+            android:layout_marginTop="60dp"
+            android:hint="Username"
+            android:background="@drawable/rounded_input"
+            android:paddingStart="25dp"
+            android:textColorHint="#FFCCCC"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_below="@id/etUsername"
+            android:layout_marginTop="30dp"
+            android:hint="Password"
+            android:background="@drawable/rounded_input"
+            android:paddingStart="25dp"
+            android:textColorHint="#FFCCCC"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:inputType="textPassword" />
+
+        <!-- Belum punya akun? Buat akun -->
+        <LinearLayout
+            android:id="@+id/registerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etPassword"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum punya akun?"
+                android:textColor="#FFCCCC"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvBuatAkun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buat_akun"
+                android:textColor="#FFCCCC"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Tombol Login -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/registerText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Login"
+            android:backgroundTint="#166051"
+            android:textColor="#FFCCCC"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_gravity="center" />
+
+        <!-- Tombol Google -->
+        <LinearLayout
+            android:id="@+id/btnGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_below="@id/btnLogin"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_white"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:src="@drawable/ic_google"
+                android:layout_marginEnd="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log in dengan google?"
+                android:textColor="#907D7D"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Tombol Facebook -->
+        <LinearLayout
+            android:id="@+id/btnFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_below="@id/btnGoogle"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_white"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_facebook"
+                android:layout_marginEnd="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log in dengan facebook?"
+                android:textColor="#907D7D"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Tombol Login Admin -->
+        <Button
+            android:id="@+id/btnAdmin"
+            android:layout_width="233dp"
+            android:layout_height="46dp"
+            android:layout_below="@id/btnFacebook"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_white"
+            android:text="Login Admin"
+            android:textColor="#907D7D"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+</ScrollView>

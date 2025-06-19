@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/admin_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F4137"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:layout_marginTop="110dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:layout_below="@id/tvLogin"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etAdminUsername"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/tvAdmin"
+        android:background="@drawable/bg_edittext"
+        android:hint="Username"
+        android:paddingStart="25dp"
+        android:textColor="#FFCCCC"
+        android:textColorHint="#FFCCCC"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etAdminPassword"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/etAdminUsername"
+        android:background="@drawable/bg_edittext"
+        android:hint="Password"
+        android:paddingStart="25dp"
+        android:textColor="#FFCCCC"
+        android:textColorHint="#FFCCCC"
+        android:textSize="18sp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnAdminLogin"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/etAdminPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Login"
+        android:textColor="#FFCCCC"
+        android:backgroundTint="#166051"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium" />
+
+</RelativeLayout>

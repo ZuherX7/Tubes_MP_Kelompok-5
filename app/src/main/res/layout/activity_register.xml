@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/register_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F4137"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/registerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="114dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/inputUsername"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@id/registerTitle"
+        android:layout_marginTop="30dp"
+        android:hint="Username"
+        android:padding="16dp"
+        android:textColorHint="#FFCCCC"
+        android:background="@drawable/bg_input" />
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@id/inputUsername"
+        android:layout_marginTop="16dp"
+        android:hint="Email"
+        android:padding="16dp"
+        android:textColorHint="#FFCCCC"
+        android:background="@drawable/bg_input" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@id/inputEmail"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColorHint="#FFCCCC"
+        android:background="@drawable/bg_input" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/inputPassword"
+        android:layout_marginTop="24dp"
+        android:text="Daftar"
+        android:textColor="#FFCCCC"
+        android:background="@drawable/bg_button" />
+
+    <TextView
+        android:id="@+id/textLoginLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sudah punya akun? Login"
+        android:textColor="#FFCCCC"
+        android:textSize="13sp"
+        android:layout_below="@id/btnRegister"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
